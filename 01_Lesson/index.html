@@ -1,106 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Ben Rademacher">
-        <meta name="description" content="This page contains all the things I'm learning how to create as I learn HTML.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ben Rademacher" />
+    <meta
+      name="description"
+      content="This page contains all the things I'm learning how to create as I learn HTML."
+    />
 
-        <title>My First Web Page</title>
-        <link rel="icon" href="html5.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
 
-    <body>
-        <h1>My Goals for the week</h1>
+  <body>
+    <header>
+      <h1>My Goals for the week</h1>
 
-        <hr>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#html">Learning HTML</a>
-                    </li>
-                    <li>
-                        <a href="#vacation">Planning a Vacation</a>
-                    </li>
-                </ul>
-            </nav>
-        <hr>
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a Vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <section id="html">
-            <h2>I'm Ready to Learn HTML</h2>
-            <p>This is my first web page. Does this actually update in real time?</p>
-            <img src="/img/Color_Palette.png" alt="First Color Palette" title="Learning HTML5 and adding images" width="800" height="600">
-            <figure>
-                <figcaption>An Example of HTML5 Code</figcaption>
-                <p>
-                    <code>
-                        &lt;h1&gt;Hello World!&lt;/h1&gt;
-                    </code>
-                </p>
-            </figure>
-            
-            <h3>My Daily Schedule</h3>
-            <p>Let me tell you how:</p>
-            <ol>
-                <li>... I learn more about web development.</li>
-                <li>... I plan out my schedule.</li>
-                <li>... I use resources from <abbr title="Mozzilla Developer Network">
-                    <a href="https://developer.mozilla.org">MDN</a></abbr>.</li>
-            </ol>
-        </section>
+    <hr />
 
-        <hr>
-
-        <section id="vacation">
-            <h2>I am Also Planning a Vacation</h2>
-            <p>I've been working hard and <em> really need</em> to unwind.</p>
-            <p>I live in <abbr title="Minnesota">MN</abbr>, so I'd like to visit the ocean.</p>
-            
-            <h3>Places I'd Like to Visit</h3>
-            <ul>
-                <li>
-                    <p>I've heard amazing things about Colombia.</p>
-                    <figure>
-                        <img src="/img/bogota_street.jpeg" alt="Colorful street in Bogota" title="Beautiful street in Colombia" width="1920" height="1080" loading="lazy">
-                        <figcaption>
-                            Colorful Downtown Bogota
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <p>I've heard good things about going here:</p>
-                    <address>
-                        https://colombia.travel/en/bogota
-                    </address>
-                    <figure>
-                        <img src="img/Color_Palette_2.png" alt="Second Color Pallete" title="Colors I'm thinking about using for a website" loading="lazy" width="800" height="600"> 
-                        <figcaption>
-                            A second color pallete to choose from. Which is better?
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <!-- TODO: Add more places and things -->
-            <h3>Places I want to avoid</h3>
-            <dl>
-                <dt>North Pole</dt>
-                <dd>I hear this is <strong>cold</strong>!</dd>
-            
-                <dt>South Pole</dt>
-                <dd>I hear this is <strong>also</strong> cold!</dd>
-            
-                <dt>Mountain Tops</dt>
-                <dd>I hear these are also cold</dd>
-            </dl>
-        </section>
-
-        <hr>
-        &lt;&lt;&lt; &copy; <a href="about.html">Ben Rademacher</a> &gt;&gt;&gt;
+    <main>
+      <article id="html">
+        <h2>I'm Ready to Learn HTML</h2>
 
         <p>
-            <a href="#">Back to Top</a>
+          This is my first web page. Does this actually update in real time?
         </p>
-    </body>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="/img/Color_Palette.png"
+            alt="First Color Palette"
+            title="Learning HTML5 and adding images"
+            width="800"
+            height="600"
+          />
+          <figure>
+            <figcaption>An Example of HTML5 Code</figcaption>
+            <p>
+              <code> &lt;h1&gt;Hello World!&lt;/h1&gt; </code>
+            </p>
+          </figure>
+        </section>
 
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>... I learn more about web development.</li>
+            <li>... I plan out my schedule.</li>
+            <li>
+              ... I use resources from
+              <abbr title="Mozzilla Developer Network">
+                <a href="https://developer.mozilla.org">MDN</a></abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">10 am</time> and I write code
+                for <time datetime="PT3H">4</time> hours every day
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="vacation">
+        <h2>I am Also Planning a Vacation</h2>
+        <p>I've been working hard and <em> really need</em> to unwind.</p>
+        <p>
+          I live in <abbr title="Minnesota">MN</abbr>, so I'd like to visit the
+          ocean.
+        </p>
+
+        <section>
+          <h3>Places I'd Like to Visit</h3>
+
+          <ul>
+            <li>
+              <p>I've heard amazing things about Colombia.</p>
+              <figure>
+                <img
+                  src="/img/bogota_street.jpeg"
+                  alt="Colorful street in Bogota"
+                  title="Beautiful street in Colombia"
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <figcaption>Colorful Downtown Bogota</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>https://colombia.travel/en/bogota</address>
+              <figure>
+                <img
+                  src="img/Color_Palette_2.png"
+                  alt="Second Color Pallete"
+                  title="Colors I'm thinking about using for a website"
+                  loading="lazy"
+                  width="800"
+                  height="600"
+                />
+                <figcaption>
+                  A second color pallete to choose from. Which is better?
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <!-- TODO: Add more places and things -->
+        <section>
+          <h3>Places I want to avoid</h3>
+
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>I hear this is <strong>also</strong> cold!</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>I hear these are also cold</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Ben Rademacher</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
 </html>
